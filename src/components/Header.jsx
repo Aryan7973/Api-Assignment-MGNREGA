@@ -34,6 +34,7 @@ const Header = () => {
     e.preventDefault();
     const lang = localStorage.getItem('language');
     const district = localStorage.getItem('selectedDistrict');
+    console.log(lang,district);
     if(!lang) navigate('/');
     else if(!district) navigate('/location');
     else navigate('/location');
